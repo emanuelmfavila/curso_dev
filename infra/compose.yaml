@@ -1,0 +1,9 @@
+services:
+    database:
+        image: "postgres:16.0-alpine3.18"
+        environment:
+            POSTGRES_USER: "emanuelavila"
+            POSTGRES_PASSWORD: "mysecretpassword"
+            POSTGRES_DB: "postgres"
+        ports:
+            - "5433:5432"
